@@ -1,6 +1,6 @@
 ﻿namespace Wallet
 {
-    partial class ShortTemplate
+    partial class EditSmallWallet
     {
         /// <summary>
         /// Required designer variable.
@@ -29,57 +29,40 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.duplicateSmallWalletName = new System.Windows.Forms.ErrorProvider(this.components);
             this.shortTemplateDetails = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.shortTemDetailValue = new System.Windows.Forms.TextBox();
-            this.shortTemDetailName = new System.Windows.Forms.TextBox();
+            this.err_walletName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button5 = new System.Windows.Forms.Button();
+            this.addDetailValue = new System.Windows.Forms.TextBox();
+            this.addDetailName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.errorShrtWltName = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorShrtWltValue = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.smallWalletName = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.saveShortTemplate = new System.Windows.Forms.Button();
-            this.err_walletName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.smallWalletName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.errorShrtWltName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.err_details = new System.Windows.Forms.ErrorProvider(this.components);
-            this.duplicateSmallWalletName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorShrtWltValue = new System.Windows.Forms.ErrorProvider(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.smallWalletCreationTime = new System.Windows.Forms.Label();
             this.smallWalletLastUpdationTime = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorShrtWltName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorShrtWltValue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.err_walletName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.err_details)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.duplicateSmallWalletName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.err_walletName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorShrtWltName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.err_details)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorShrtWltValue)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // duplicateSmallWalletName
             // 
-            this.groupBox1.Controls.Add(this.smallWalletLastUpdationTime);
-            this.groupBox1.Controls.Add(this.smallWalletCreationTime);
-            this.groupBox1.Controls.Add(this.shortTemplateDetails);
-            this.groupBox1.Controls.Add(this.shortTemDetailValue);
-            this.groupBox1.Controls.Add(this.shortTemDetailName);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(18, 92);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(945, 401);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add Details";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.duplicateSmallWalletName.ContainerControl = this;
             // 
             // shortTemplateDetails
             // 
@@ -107,23 +90,35 @@
             this.columnHeader2.Text = "Value";
             this.columnHeader2.Width = 165;
             // 
-            // shortTemDetailValue
+            // err_walletName
             // 
-            this.shortTemDetailValue.Location = new System.Drawing.Point(122, 100);
-            this.shortTemDetailValue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.shortTemDetailValue.Name = "shortTemDetailValue";
-            this.shortTemDetailValue.Size = new System.Drawing.Size(211, 26);
-            this.shortTemDetailValue.TabIndex = 7;
-            this.shortTemDetailValue.TextChanged += new System.EventHandler(this.shortTemDetailValue_TextChanged);
+            this.err_walletName.ContainerControl = this;
             // 
-            // shortTemDetailName
+            // button5
             // 
-            this.shortTemDetailName.Location = new System.Drawing.Point(122, 46);
-            this.shortTemDetailName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.shortTemDetailName.Name = "shortTemDetailName";
-            this.shortTemDetailName.Size = new System.Drawing.Size(211, 26);
-            this.shortTemDetailName.TabIndex = 6;
-            this.shortTemDetailName.TextChanged += new System.EventHandler(this.shortTemDetailName_TextChanged);
+            this.button5.Location = new System.Drawing.Point(799, 30);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(112, 35);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "Save";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // addDetailValue
+            // 
+            this.addDetailValue.Location = new System.Drawing.Point(122, 100);
+            this.addDetailValue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addDetailValue.Name = "addDetailValue";
+            this.addDetailValue.Size = new System.Drawing.Size(211, 26);
+            this.addDetailValue.TabIndex = 7;
+            // 
+            // addDetailName
+            // 
+            this.addDetailName.Location = new System.Drawing.Point(122, 46);
+            this.addDetailName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addDetailName.Name = "addDetailName";
+            this.addDetailName.Size = new System.Drawing.Size(211, 26);
+            this.addDetailName.TabIndex = 6;
             // 
             // label2
             // 
@@ -134,7 +129,6 @@
             this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Value";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -145,7 +139,6 @@
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button3
             // 
@@ -156,7 +149,36 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.deleteShortTemDetails);
+            this.button3.Click += new System.EventHandler(this.deleteSelected_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(532, 30);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(112, 35);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Clear All";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.clearAllDetails_click);
+            // 
+            // smallWalletName
+            // 
+            this.smallWalletName.Location = new System.Drawing.Point(147, 25);
+            this.smallWalletName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.smallWalletName.Name = "smallWalletName";
+            this.smallWalletName.Size = new System.Drawing.Size(250, 26);
+            this.smallWalletName.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(25, 30);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Wallet Name";
             // 
             // button2
             // 
@@ -167,7 +189,11 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.addShortTemDetails);
+            this.button2.Click += new System.EventHandler(this.addDetails_Click);
+            // 
+            // errorShrtWltName
+            // 
+            this.errorShrtWltName.ContainerControl = this;
             // 
             // button1
             // 
@@ -178,74 +204,50 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Clear All";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.clear_shorttemdetails);
-            // 
-            // errorShrtWltName
-            // 
-            this.errorShrtWltName.ContainerControl = this;
-            // 
-            // errorShrtWltValue
-            // 
-            this.errorShrtWltValue.ContainerControl = this;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 40);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Wallet Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // smallWalletName
-            // 
-            this.smallWalletName.Location = new System.Drawing.Point(140, 35);
-            this.smallWalletName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.smallWalletName.Name = "smallWalletName";
-            this.smallWalletName.Size = new System.Drawing.Size(250, 26);
-            this.smallWalletName.TabIndex = 2;
-            this.smallWalletName.TextChanged += new System.EventHandler(this.smallWalletNameChanged);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(670, 40);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 35);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Clear All";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.smallWallet_clearAllData);
-            // 
-            // saveShortTemplate
-            // 
-            this.saveShortTemplate.Location = new System.Drawing.Point(792, 40);
-            this.saveShortTemplate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.saveShortTemplate.Name = "saveShortTemplate";
-            this.saveShortTemplate.Size = new System.Drawing.Size(112, 35);
-            this.saveShortTemplate.TabIndex = 4;
-            this.saveShortTemplate.Text = "Save";
-            this.saveShortTemplate.UseVisualStyleBackColor = true;
-            this.saveShortTemplate.Click += new System.EventHandler(this.smallWalletSaveData);
-            // 
-            // err_walletName
-            // 
-            this.err_walletName.ContainerControl = this;
+            this.button1.Click += new System.EventHandler(this.clearDetails_Click);
             // 
             // err_details
             // 
             this.err_details.ContainerControl = this;
             // 
-            // duplicateSmallWalletName
+            // errorShrtWltValue
             // 
-            this.duplicateSmallWalletName.ContainerControl = this;
+            this.errorShrtWltValue.ContainerControl = this;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.smallWalletLastUpdationTime);
+            this.groupBox1.Controls.Add(this.smallWalletCreationTime);
+            this.groupBox1.Controls.Add(this.shortTemplateDetails);
+            this.groupBox1.Controls.Add(this.addDetailValue);
+            this.groupBox1.Controls.Add(this.addDetailName);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Location = new System.Drawing.Point(25, 82);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(945, 401);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Add Details";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(651, 30);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(141, 35);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "Delete Wallet";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // smallWalletCreationTime
             // 
             this.smallWalletCreationTime.AutoSize = true;
-            this.smallWalletCreationTime.Location = new System.Drawing.Point(12, 280);
+            this.smallWalletCreationTime.Location = new System.Drawing.Point(7, 272);
             this.smallWalletCreationTime.Name = "smallWalletCreationTime";
             this.smallWalletCreationTime.Size = new System.Drawing.Size(0, 20);
             this.smallWalletCreationTime.TabIndex = 9;
@@ -253,32 +255,31 @@
             // smallWalletLastUpdationTime
             // 
             this.smallWalletLastUpdationTime.AutoSize = true;
-            this.smallWalletLastUpdationTime.Location = new System.Drawing.Point(12, 327);
+            this.smallWalletLastUpdationTime.Location = new System.Drawing.Point(7, 313);
             this.smallWalletLastUpdationTime.Name = "smallWalletLastUpdationTime";
             this.smallWalletLastUpdationTime.Size = new System.Drawing.Size(0, 20);
             this.smallWalletLastUpdationTime.TabIndex = 10;
             // 
-            // ShortTemplate
+            // EditSmallWallet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 504);
-            this.Controls.Add(this.saveShortTemplate);
+            this.ClientSize = new System.Drawing.Size(990, 502);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.smallWalletName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "ShortTemplate";
-            this.Text = "Small Wallet";
+            this.Name = "EditSmallWallet";
+            this.Text = "EditSmallWallet";
+            ((System.ComponentModel.ISupportInitialize)(this.duplicateSmallWalletName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.err_walletName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorShrtWltName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.err_details)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorShrtWltValue)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorShrtWltName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorShrtWltValue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.err_walletName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.err_details)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.duplicateSmallWalletName)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,26 +287,27 @@
 
         #endregion
 
+        private System.Windows.Forms.ErrorProvider duplicateSmallWalletName;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox smallWalletName;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListView shortTemplateDetails;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.TextBox shortTemDetailValue;
-        private System.Windows.Forms.TextBox shortTemDetailName;
+        private System.Windows.Forms.TextBox addDetailValue;
+        private System.Windows.Forms.TextBox addDetailName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ErrorProvider errorShrtWltName;
-        private System.Windows.Forms.ErrorProvider errorShrtWltValue;
-        private System.Windows.Forms.TextBox smallWalletName;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button saveShortTemplate;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ErrorProvider err_walletName;
+        private System.Windows.Forms.ErrorProvider errorShrtWltName;
         private System.Windows.Forms.ErrorProvider err_details;
-        private System.Windows.Forms.ErrorProvider duplicateSmallWalletName;
+        private System.Windows.Forms.ErrorProvider errorShrtWltValue;
+        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label smallWalletLastUpdationTime;
         private System.Windows.Forms.Label smallWalletCreationTime;
     }
